@@ -1,23 +1,20 @@
 .color-blue{
 	background-color:#69A3FA;
 	color:white;
-	border-style: solid;
-	border-color:#EBE566;
+	border-width:5px;
+	border-color:gray;
 }
-.color-yellow{
-	background-color:#EBE566;
-	color:white;
-	border-style: solid;
-	border-color:yellow;
+
+.datos-personales{
+	padding-left:5%;
 }
-.color-green{
-	background-color:#8FFC83;
-	color:white;
-	border-style: solid;
-	border-color:yellow;
+
+.noticias{
+	padding:2%;
 }
-.color-red{
-	background-color:#F37A7A;
+
+.justified{
+	padding:2%;
 }
 
 *{
@@ -27,7 +24,9 @@
 }
 
 body{
-	background-color:#1B61CA;
+	background-color:#0a5685;
+	padding:10px;
+
 }
 
 #foto{
@@ -43,6 +42,12 @@ tr+tr{
 h1{
 	text-align:center;
 }	
-tr > th > h1{
+
+[colspan]{
 	background-color:#A0CFEC;
 }
+
+tr td h1{
+	color:#f3fb83;
+}
+
