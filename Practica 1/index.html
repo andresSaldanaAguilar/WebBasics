@@ -4,41 +4,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<LINK REL=StyleSheet HREF="Styles.css" TYPE="text/css" MEDIA=screen>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">	
-    <title>Practica 3</title>
+  <title>Practica 1</title>
 </head>
 
 <body>
-	<table class="color-blue" width="100%" border="1">
+	<table style="width:100%" border="1">
 	
 	<tr>
-		<th colspan="3"><img src="diamond.png" height="40%" width="100%"></th>
+		<th colspan="3"><img src="diamond.png" height="200" width="1322"></th>
 	</tr>
 	  
 	<tr>	
 		
-		<td align="center" width="10%" border="1">	
+		<td align="center" width="100">	
 			<h2><a href="#datos">Datos</a></h2>
 			<h2><a href="horario.html">Horario</a></h2>		
 		</td>
 		
-		<td class="datos-personales" align="left" width="45%">
-				<h1>Datos personales</h1>
+		<td align="left" width="444" >
+			<fieldset>
+				<legend><h1>Datos personales</h1></legend>
 				<strong>Nombre</strong>
-				<p>Andres Saldaña Aguilar</p><img border="1" id="foto" name="foto" src="user.jpg" height="200" width="200" align="right" hspace="50">
+				<p>Andres Saldaña Aguilar</p><img src="user.jpg" height="200" width="200" align="right" hspace="50" border="5">
 				<strong>Edad</strong>
 				<p>18 años</p>
-				<strong>Nacionapdad</strong>
+				<strong>Nacionalidad</strong>
 				<p>Mexicano</p>
 				<strong>Sexo</strong>
 				<p>Mascupno</p>
 				<strong>Ocupacion</strong>
 				<p>Estudiante</p>			
+			</fieldset>
 		</td>
 		
 
-		<td class="noticias" align="justify" width="45%">
+		<td align="justify" width="444">
 				<h1 hspace="100">Noticias de la web</h1>
 				<!--primer noticia-->
 				<strong>Samsung boss sentenced to 5</strong>
@@ -68,45 +68,33 @@
 
 	</table>
 	<br>
-	<table class="color-blue" width="100%" border="1" id="datos">
-		<tr>
-			<tr>
-				<th colspan="3"><h1>Datos escolares</h1></th>
-			</tr>
-			<tr>
-				<th>
-					<ul class="justified">
-						<p>MATERIAS REPROBADAS: 0 </p>
-						<p>MATERIAS NO CURSADAS: 0<img border="1" id="foto" src="user.jpg" alt="Smiley face" height="100" width="100" align="right" hspace="50"></p>
-						<p>MATERIAS DESFASADAS: 0</p>
-						<p>MATERIAS CURSADAS: 6</p>
-						<p>PROMEDIO ACTUAL: 9.0</p>
-					</ul>
-				</th>
-			</tr>	
-		</tr>
-	</table>	
+
+	<fieldset name="datos" id="datos">
+		<legend><h1>Datos personales</h1></legend>
+			<th>
+				<ul align="left">
+					<p>MATERIAS REPROBADAS: 0 </p>
+					<p>MATERIAS NO CURSADAS: 0<img src="user.jpg" height="100" width="100" align="right" hspace="50" border="5"></p>
+					<p>MATERIAS DESFASADAS: 0</p>
+					<p>MATERIAS CURSADAS: 6</p>
+					<p>PROMEDIO ACTUAL: 9.0</p>
+				</ul>
+			</th>
+	</fieldset>
+	
 	<br>
-	<table class="color-blue" width="100%" border="1">
-		<tr>
-			<tr>
-				<th colspan="3"><h1>Acerca de mi</h1></th>
-			</tr>
-			<tr>
-				<th>
-					<ul class="justified" align="left">
+	
+	<fieldset>
+		<legend><h1>Datos escolares</h1></legend>
+					<ul align="left">
 						<p>Pasatiempos: dibujar, fotografia, viajar.</p>
-						<p>Peliculas preferidas: pepculas del studio ghibp.</p>
-						<p>Musica preferida: electronica, piano rock, new wave.<img border="1" id="foto" src="user.jpg" alt="Smiley face" height="100" width="100" align="right" hspace="50"></p>
-						<p>Libros preferidos: fullmetal alchemist</p>
+						<p>Pepculas preferidas: pepculas del studio ghibp.</p>
+						<p>Musica preferida: electronica, piano rock, new wave.<img src="user.jpg" height="100" width="100" align="right" hspace="50" border="5"></p>
+						<p>pbros preferidos: no leo :( </p>
 						<p>Deportes: natacion, tenis, ping-pong.</p>
 						<p>Otros gustos: los animales, la programación.</p>
 					</ul>
-				</th>
-			</tr>	
-		</tr>
-
-	</table>
+	</fieldset>
 
 </body>
 

@@ -6,39 +6,42 @@
 <head>
 	<LINK REL=StyleSheet HREF="Styles.css" TYPE="text/css" MEDIA=screen>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">	
-    <title>Practica 3</title>
+    <title>Practica 4</title>
 </head>
 
 <body>
-	<table class="color-blue" width="100%" border="1">
+	<div class="color-blue">
 	
-	<tr>
-		<th colspan="3"><img src="diamond.png" height="40%" width="100%"></th>
-	</tr>
-	  
-	<tr>	
+	<div class="header">
+		<img src="header.jpg" height="40%" width="100%">
+	</div>
 		
-		<td align="center" width="10%" border="1">	
+		<div class="columna-tmpequeño" border="1">	
 			<h2><a href="#datos">Datos</a></h2>
 			<h2><a href="horario.html">Horario</a></h2>		
-		</td>
+		</div>
 		
-		<td class="datos-personales" align="left" width="45%">
-				<h1>Datos personales</h1>
-				<strong>Nombre</strong>
-				<p>Andres Saldaña Aguilar</p><img border="1" id="foto" name="foto" src="user.jpg" height="200" width="200" align="right" hspace="50">
-				<strong>Edad</strong>
-				<p>18 años</p>
-				<strong>Nacionapdad</strong>
-				<p>Mexicano</p>
-				<strong>Sexo</strong>
-				<p>Mascupno</p>
-				<strong>Ocupacion</strong>
-				<p>Estudiante</p>			
-		</td>
+		<div class="columna-tm2" align="left">
+				<div class="columna-tm1">
+					<h1>Datos personales</h1>
+					<strong>Nombre</strong>
+					<p>Andres Saldaña Aguilar</p>
+					<strong>Edad</strong>
+					<p>18 años</p>
+					<strong>Nacionapdad</strong>
+					<p>Mexicano</p>
+					<strong>Sexo</strong>
+					<p>Masculino</p>
+					<strong>Ocupacion</strong>
+					<p>Estudiante</p>
+				</div>
+				<div>
+					<img border="1" id="foto" name="foto" src="user.jpg" height="200" width="200" align="right" hspace="50">
+				</div>
+		</div>
 		
 
-		<td class="noticias" align="justify" width="45%">
+		<div class="columna-tm1" align="justify">
 				<h1 hspace="100">Noticias de la web</h1>
 				<!--primer noticia-->
 				<strong>Samsung boss sentenced to 5</strong>
@@ -63,37 +66,27 @@
 				<p> de la aplicación del software libre, cree que "debe existir una regulación de </p>
 				<p>ciertos temas relacionados con Internet y las redes, como las incitaciones al odio,</p>
 				<p>las amenazas de muerte o el acoso en el pais". </p>
-		</td>
-	 </tr>
+		</div>
 
-	</table>
+	</div>
 	<br>
-	<table class="color-blue" width="100%" border="1" id="datos">
-		<tr>
-			<tr>
-				<th colspan="3"><h1>Datos escolares</h1></th>
-			</tr>
-			<tr>
-				<th>
+	<div class="color-blue">
+			<div class="titulo" id="datos" name="datos">
+				<text>Datos escolares</text>
+			</div>
 					<ul class="justified">
 						<p>MATERIAS REPROBADAS: 0 </p>
 						<p>MATERIAS NO CURSADAS: 0<img border="1" id="foto" src="user.jpg" alt="Smiley face" height="100" width="100" align="right" hspace="50"></p>
 						<p>MATERIAS DESFASADAS: 0</p>
 						<p>MATERIAS CURSADAS: 6</p>
 						<p>PROMEDIO ACTUAL: 9.0</p>
-					</ul>
-				</th>
-			</tr>	
-		</tr>
-	</table>	
+					</ul>		
+	</div>	
 	<br>
-	<table class="color-blue" width="100%" border="1">
-		<tr>
-			<tr>
-				<th colspan="3"><h1>Acerca de mi</h1></th>
-			</tr>
-			<tr>
-				<th>
+	<div class="color-blue">
+			<div class="titulo">
+				<text>Acerca de mi</text>
+			</div>			
 					<ul class="justified" align="left">
 						<p>Pasatiempos: dibujar, fotografia, viajar.</p>
 						<p>Peliculas preferidas: pepculas del studio ghibp.</p>
@@ -102,12 +95,8 @@
 						<p>Deportes: natacion, tenis, ping-pong.</p>
 						<p>Otros gustos: los animales, la programación.</p>
 					</ul>
-				</th>
-			</tr>	
-		</tr>
-
-	</table>
-
+	</div>
+	
 </body>
 
 </html>
