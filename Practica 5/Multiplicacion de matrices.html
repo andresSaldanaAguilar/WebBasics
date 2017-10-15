@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Matrices</title>
+		<script>
+			var m1=[[0,1,0],[0,0,2],[1,3,2]]; //matriz uno
+			var m2=[[0,1,1],[2,1,0],[1,2,1]]; //matriz dos
+			var c=[[0,0,0],[0,0,0],[0,0,0]];  //matriz que guardará resultado
+			var mensaje="";		 
+
+				//multiplicamos la matriz   
+			    for (var i = 0; i < m1.length; i++) {
+			        for (var j = 0; j < m2.length; j++) {
+			            for (var k = 0; k < m1.length; k++) {
+			                c[i][j] += m1[i][k] * m2[k][j];
+			            }
+			        }
+			    }
+
+			    //guardamos en cadena mensaje
+				for (var i=0;i<c.length;i++) {
+					for (var j=0;j<c.length;j++) {
+						mensaje=mensaje+c[i][j];
+						mensaje=mensaje+" ";			
+					}
+					mensaje=mensaje+"\n";
+				}
+
+				alert("Resultado de multiplicación de matrices:\n"+mensaje);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
