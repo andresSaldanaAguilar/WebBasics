@@ -1,0 +1,33 @@
+.left{
+	padding: 1%;
+	color: white;
+	margin-top: 2%;
+	border: none;
+	border-radius: 4px;
+	background-color: #084B8A;
+	float: left;
+	box-shadow: 1px 1px 10px #2D2D2D;
+}
+.right{
+	padding: 1%;
+	color: white;
+	margin-top: 2%;
+	border: none;
+	border-radius: 4px;
+	background-color: #084B8A;
+	float: right;
+	box-shadow: 0px 1px 10px #2D2D2D;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.img-container{
+	border-radius: 4px;
+	box-shadow: 0px 1px 10px #2D2D2D;
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+
+}

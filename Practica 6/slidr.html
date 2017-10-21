@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>Practica 6</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Styles.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<body>
+
+<h2 align="center">Galeria de imagenes</h2>
+
+<div class="w3-content w3-display-container">
+
+  <img class="img-container" src="1.jpg" height="525px" width="100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="anteriorImagen()">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="siguienteImagen()">&#10095;</button>
+  <button class="left" onclick="cambiaColorFondo()">Cambiar color fondo</button>
+  <button class="right" onclick="cambiaColorFuente()">Cambiar color fuente</button> 
+</div>
+
+<script>
+
+var i=1;
+
+function siguienteImagen(){
+  i++;
+  if(i>20){
+    i=1;
+  }
+  document.images[0].src=i+".jpg";
+}
+function anteriorImagen(){
+  i--;
+  if(i<1){
+    i=20;
+  }
+  document.images[0].src=i+".jpg";
+}
+function cambiaColorFondo(){
+  var fondo=prompt("Color de fondo:");
+  document.bgColor=fondo;
+}
+function cambiaColorFuente(){
+  var fuente=prompt("Color de letra:");
+  document.fgColor=fuente;
+}
+
+</script>
+
+</body>
+</html>
