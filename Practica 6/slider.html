@@ -16,6 +16,8 @@
   <button class="w3-button w3-black w3-display-right" onclick="siguienteImagen()">&#10095;</button>
   <button class="left" onclick="cambiaColorFondo()">Cambiar color fondo</button>
   <button class="right" onclick="cambiaColorFuente()">Cambiar color fuente</button> 
+  <button class="left" onclick="primerImagen()">Primer Imagen</button>
+  <button class="right" onclick="ultimaImagen()">Ultima Imagen</button> 
 </div>
 
 <script>
@@ -35,6 +37,12 @@ function anteriorImagen(){
     i=20;
   }
   document.images[0].src=i+".jpg";
+}
+function primerImagen(){
+  document.images[0].src=1+".jpg";
+}
+function ultimaImagen(){
+  document.images[0].src=20+".jpg";
 }
 function cambiaColorFondo(){
   var fondo=prompt("Color de fondo:");
