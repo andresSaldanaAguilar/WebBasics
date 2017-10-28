@@ -1,0 +1,27 @@
+button{
+	margin-top: 2%;
+	margin-left: 46%;
+	padding: 1%;
+	background-color: #BDBDBD;
+	border-radius: 5px;
+	border: none;
+}
+
+table{
+	    border: 3px solid slategray;
+	    background-color: #BDBDBD;
+}
+th, td {
+	    border: 3px solid slategray;
+	    background-color: #F2F2F2;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid slategray;
+    padding: 10px;
+}
+
+body{
+	background-color: lightgrey;
+}

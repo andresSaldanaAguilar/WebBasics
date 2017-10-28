@@ -18,12 +18,19 @@
   <button class="right" onclick="cambiaColorFuente()">Cambiar color fuente</button> 
   <button class="left" onclick="primerImagen()">Primer Imagen</button>
   <button class="right" onclick="ultimaImagen()">Ultima Imagen</button> 
+  <button id="mybutton" class="left" onmouseover="cambiaColor()" onmouseout="cambiaColorOriginal()">Boton</button>
 </div>
 
 <script>
 
 var i=1;
 
+function cambiaColor(){
+  document.getElementById("mybutton").style.backgroundColor = "#132589" ;
+}
+function cambiaColorOriginal(){
+  document.getElementById("mybutton").style.backgroundColor = "#084B8A";
+}
 function siguienteImagen(){
   i++;
   if(i>20){
