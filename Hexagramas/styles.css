@@ -1,0 +1,67 @@
+/*contenedor principal*/
+.container{
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	background-color: #D8D8D8;
+}
+
+/*selector universal, tipo de fuente*/
+*{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*header*/
+h1{
+	font-size: 400%;
+	color: #585858;
+}
+/*campos de texto*/
+input{
+	width: 100%;
+	color: #585858;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 200%;
+}
+/*estilos de las tablas*/
+table{
+	text-align: center;
+	margin-left: 3%;
+	margin-bottom: 9%; 
+	background-color: #5882FA;
+	font-size: 100%;
+	width: 90%;
+	color: white;
+}
+/*define bloques grandes en una linea*/
+.block{
+	display: inline-block;
+	width: 49%;
+}
+/*define pequeños bloques en una linea*/
+.short-block{
+	display: inline-block;
+	width: 30%;
+}
+/*color de los botones cuando no son presionados*/
+.clase1{
+	padding: 2%;
+	background-color: #5882FA;
+	margin-top: 2%;
+	border: none;
+	border-radius: 2px;
+	font-size: 120%;
+	width: 32.9%;
+	color: white;
+}
+/*color de los botones cuando estan siendo presionados*/
+.clase2{
+	padding: 2%;
+	background-color: #2E64FE;
+	margin-top: 2%;
+	border: none;
+	border-radius: 2px;
+	font-size: 120%;
+	width: 32.9%;
+	color: white;
+}
