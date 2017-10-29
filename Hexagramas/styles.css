@@ -34,15 +34,25 @@ table{
 	color: white;
 }
 /*define bloques grandes en una linea*/
-.block{
+.med-block{
 	display: inline-block;
 	width: 49%;
 }
+
+.full-block{
+	display: inline-block;
+	width: 100%;
+}
+
 /*define pequeños bloques en una linea*/
 .short-block{
+	float: left;
 	display: inline-block;
 	width: 30%;
+	margin-left: 1%;
 }
+
+
 /*color de los botones cuando no son presionados*/
 .clase1{
 	padding: 2%;
