@@ -3,37 +3,35 @@
 <head>
 	<title>Hexagramas</title>
 	<meta name="author" content="Saldaña Aguilar Andrés , Ariza Martinez Aristides">
-	<!--link a hoja de estilos-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<style>@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');</style>
-	<!--link a scripts-->
 	<script src="scripts.js"></script>
+	<style>@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');</style>
 </head>
 <body>	
 <div class="container">
 	<div class="med-block">
 		<h1>Hexagramas</h1>
 		<!--campos de texto-->
-		<div><input type="number" id="x" ></div>
-		<div><input type="number" id="y" ></div>
-		<div><input type="number" id="z" ></div>
+		<div><input type="number" id="x"></div>
+		<div><input type="number" id="y"></div>
+		<div><input type="number" id="z"></div>
 		<!--botones con funciones js para cambiar de color-->
-		<button class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)" onclick="insertarFila(this)">Aceptar</button>
-		<button class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)">Borrar Linea</button>
+		<button type="submit" class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)" onclick="insertarFila(this)">Aceptar</button>
+		<button class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)"  onclick="borrarNodo(this)">Borrar Linea</button>
 		<button class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)" onclick="borrarNodos(this)">Borrar Todo</button>
 	</div>
 		<div class="med-block">
 
-			<div class="short-block">
-			<table id="tabla1"></table>
+			<div class="short-block" style="margin-left: 7%">
+			<table id="tabla1" class="large-font"></table>
 			</div>	
 
 			<div class="short-block">
-			<table id="tabla2"></table>
+			<table id="tabla2" class="large-font"></table>
 			</div>	
 
 			<div class="short-block">
-			<table id="tabla3"></table>
+			<table id="tabla3" class="large-font"></table>
 			</div>
 
 			<!--tabla. aun le falta formato-->

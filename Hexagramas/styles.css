@@ -75,3 +75,7 @@ table{
 	width: 32.9%;
 	color: white;
 }
+
+.large-font{
+	font-size: 120%;
+}

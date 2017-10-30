@@ -1,3 +1,7 @@
+/*arreglo que guarda los numeros ingresados, y el indice actual del arreglo*/
+var arreglo = [];
+var j=0;
+
 function cambiaColor(nodo){
 	nodo.setAttribute("class","clase2");
 }
@@ -6,9 +10,10 @@ function cambiaColorOriginal(nodo){
 	nodo.setAttribute("class","clase1");
 }
 
+/*muestra o no las tablas 2 y 3*/
 function visibilidad(visible){
-	var tabla1 = document.getElementById ("tabla1") ;
-	var tabla2 = document.getElementById ("tabla2") ;
+	var tabla1 = document.getElementById ("tabla2") ;
+	var tabla2 = document.getElementById ("tabla3") ;
 
   if ( visible == "true" ){
       tabla1.style.visibility = "visible" ;
@@ -21,14 +26,40 @@ function visibilidad(visible){
   }
 }
 
-function insertarFila(){
-	/*si no es mutante, escondemos la sig. dos tablas*/
+/*busca en todo el arreglo si hay mutantes o no*/
+function buscadorDeMutante(){
+	var n=0;
 	visibilidad("false");
+	while(n < j){
+		if(arreglo[n] == 6 || arreglo[n] == 9){
+			visibilidad("true");
+		}
+		n++;
+	}
+}
 
+
+function insertarFila(){
 	/*el operando antes de document hace que se conviertan los valores de cadenas a enteros*/
 	var x = +document.getElementById("x").value;
 	var y = +document.getElementById("y").value;
 	var z = +document.getElementById("z").value;
+
+	/*validando que solo sean seis lineas*/
+	if(j > 5){
+		return null;
+	}	
+	/*validando enteros*/
+	if(x < 2 || y < 2 || z < 2){
+		return null;
+	}
+	if(x > 3 || y > 3 || z > 3){
+		return null;
+	}
+
+	/*si paso las validaciones, entonces insertamos*/
+	else
+
 	var n=x+y+z;
 	var str;
 	switch (n) {
@@ -115,27 +146,41 @@ function insertarFila(){
 		/*insertamos al inicio*/
 		tabla3.insertBefore(tr2, tabla3.childNodes[0]);
 	}
+	/*si es mutante, mostramos las sig. dos tablas, sino hay, pos no y ya*/
+	arreglo[j]=n;
+	j++;
+	buscadorDeMutante();
 
-	/*si es mutante, mostramos las sig. dos tablas*/
-	if(n==6 || n==9){
-		visibilidad("true");
-	}
-	
 }
 
 function borrarNodos() {
-    var list = document.getElementById("tabla1");
-    while (list.hasChildNodes()) {
-    list.removeChild(list.firstChild);
+    var lista = document.getElementById("tabla1");
+    while (lista.hasChildNodes()) {
+    lista.removeChild(lista.firstChild);
 	}
-	var list2 = document.getElementById("tabla2");
-    while (list2.hasChildNodes()) {
-    list2.removeChild(list2.firstChild);
+	var lista2 = document.getElementById("tabla2");
+    while (lista2.hasChildNodes()) {
+    lista2.removeChild(lista2.firstChild);
 	}
-	var list3 = document.getElementById("tabla3");
-    while (list3.hasChildNodes()) {
-    list3.removeChild(list3.firstChild);
+	var lista3 = document.getElementById("tabla3");
+    while (lista3.hasChildNodes()) {
+    lista3.removeChild(lista3.firstChild);
 	}
+	arreglo =[];
+}
+
+function borrarNodo() {
+    var listaa = document.getElementById("tabla1");
+    listaa.removeChild(listaa.firstChild);
+
+	var lista2 = document.getElementById("tabla2");
+    lista2.removeChild(lista2.firstChild);
+
+	var lista3 = document.getElementById("tabla3");
+    lista3.removeChild(lista3.firstChild);
+
+    j--;
+    buscadorDeMutante();
 }
 
 
