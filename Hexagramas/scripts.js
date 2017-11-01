@@ -166,19 +166,23 @@ function borrarNodos() {
     while (lista3.hasChildNodes()) {
     lista3.removeChild(lista3.firstChild);
 	}
+	//var i;
+	//for(i=0; i<j; i++){
+	//	j--;
+	//}
 	arreglo =[];
+	j=0;
 }
 
 function borrarNodo() {
-    var listaa = document.getElementById("tabla1");
-    listaa.removeChild(listaa.firstChild);
+    var lista = document.getElementById("tabla1");
+    lista.removeChild(lista.firstChild);
 
 	var lista2 = document.getElementById("tabla2");
     lista2.removeChild(lista2.firstChild);
 
 	var lista3 = document.getElementById("tabla3");
     lista3.removeChild(lista3.firstChild);
-
     j--;
     buscadorDeMutante();
 }
