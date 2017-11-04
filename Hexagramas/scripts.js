@@ -1,6 +1,7 @@
 /*arreglo que guarda los numeros ingresados, y el indice actual del arreglo*/
-var arreglo = [];
+var arregloUno = [];
 var j=0;
+var visible=false;
 
 function cambiaColor(nodo){
 	nodo.setAttribute("class","clase2");
@@ -10,182 +11,140 @@ function cambiaColorOriginal(nodo){
 	nodo.setAttribute("class","clase1");
 }
 
-/*muestra o no las tablas 2 y 3*/
-function visibilidad(visible){
-	var tabla1 = document.getElementById ("tabla2") ;
-	var tabla2 = document.getElementById ("tabla3") ;
-
-  if ( visible == "true" ){
-      tabla1.style.visibility = "visible" ;
-  	  tabla2.style.visibility = "visible" ;
-  }
-  if ( visible == "false")
-  {
-      tabla1.style.visibility = "hidden" ;
-  	  tabla2.style.visibility = "hidden" ;    
-  }
-}
-
-/*busca en todo el arreglo si hay mutantes o no*/
-function buscadorDeMutante(){
-	var n=0;
-	visibilidad("false");
-	while(n < j){
-		if(arreglo[n] == 6 || arreglo[n] == 9){
-			visibilidad("true");
-		}
-		n++;
-	}
-}
-
-
 function insertarFila(){
-	/*el operando antes de document hace que se conviertan los valores de cadenas a enteros*/
+/*el operando antes de document hace que se conviertan los valores de cadenas a enteros*/
 	var x = +document.getElementById("x").value;
 	var y = +document.getElementById("y").value;
 	var z = +document.getElementById("z").value;
 
-	/*validando que solo sean seis lineas*/
-	if(j > 5){
-		return null;
-	}	
-	/*validando enteros*/
-	if(x < 2 || y < 2 || z < 2){
-		return null;
-	}
-	if(x > 3 || y > 3 || z > 3){
-		return null;
-	}
+	if(x==0 || y==0 || z==0) /*Validacion para que no se dejen campos vacios*/
+		alert("Se requiere un valor numérico en todos los campos");
+	else if(x>3 || y>3 || z>3)
+		alert("Los valores exceden los permitidos");
+	else if(j>5)
+		alert("Una línea mas excedería el tamaño de un Hexagrama");	
+	else{
+		arregloUno[j] =x+y+z;
+			switch (arregloUno[j]) {
+    			case 6:
+    				var filaHexagramaX ="____X____";
+    				var filaHexagramaY ="____ ____";
+    				var filaHexagramaZ ="_________";
+    				visible=true;
+        		break;
+    		case 7:
+    				var filaHexagramaX ="_________";
+    				var filaHexagramaY ="_________";
+    				var filaHexagramaZ ="_________";
+        		break;
+    		case 8:
+    				var filaHexagramaX ="____ ____";
+    				var filaHexagramaY ="____ ____";
+    				var filaHexagramaZ ="____ ____";
+        		break;
+    		case 9:
+    				var filaHexagramaX ="____O____";
+    				var filaHexagramaY ="_________";
+    				var filaHexagramaZ ="____ ____";
+		    		visible=true;
+        		break;
+			}
+		//Agregamos los valores a las tablas
+    				var valorHexagramaX=document.createTextNode(filaHexagramaX);
+					var valorHexagramaY=document.createTextNode(filaHexagramaY);
+					var valorHexagramaZ=document.createTextNode(filaHexagramaZ);
+							var trX=document.createElement("tr");
+							var trY=document.createElement("tr");
+							var trZ=document.createElement("tr");
 
-	/*si paso las validaciones, entonces insertamos*/
-	else
+						trX.appendChild(valorHexagramaX);
+						trY.appendChild(valorHexagramaY);
+						trZ.appendChild(valorHexagramaZ);
 
-	var n=x+y+z;
-	var str;
-	switch (n) {
-    case 6:
-        str="____X____";
-        break;
-    case 7:
-        str="_________";
-        break;
-    case 8:
-        str="____ ____";
-        break;
-    case 9:
-        str="____O____";
-        break;
-    default :
-    	break;
-	}
-	if(str != null){
-		/*creamos linea*/
-		var linea=document.createTextNode(str);	
-		var tr=document.createElement("tr");
-		var td=document.createElement("td");		
-		td.appendChild(linea);
-		tr.appendChild(td);
-		var tabla1=document.getElementById("tabla1");
-		/*insertamos al inicio*/
-		tabla1.insertBefore(tr, tabla1.childNodes[0]);
-	}
+					var anexa_a_X=document.getElementById("tabla1");    			
+						anexa_a_X.insertBefore(trX, anexa_a_X.childNodes[0]);
+					var anexa_a_Y=document.getElementById("tabla2");    			
+						anexa_a_Y.insertBefore(trY, anexa_a_Y.childNodes[0]);
+					var anexa_a_Z=document.getElementById("tabla3");    			
+						anexa_a_Z.insertBefore(trZ, anexa_a_Z.childNodes[0]);
 
-
-	switch (n) {
-    case 6:
-        str1="____ ____";
-        break;
-    case 7:
-        str1="_________";
-        break;
-    case 8:
-        str1="____ ____";
-        break;
-    case 9:
-        str1="_________";
-        break;
-    default :
-    	break;
+		visibilidad_Hexagrama();
+		visibilidadNombreTriagramas(j);
+		j++;
+		alert(j);
 	}
-	if(str1 != null){
-		/*creamos linea*/
-		var linea1=document.createTextNode(str1);	
-		var tr1=document.createElement("tr");
-		var td1=document.createElement("td");		
-		td1.appendChild(linea1);
-		tr1.appendChild(td1);
-		var tabla2=document.getElementById("tabla2");
-		/*insertamos al inicio*/
-		tabla2.insertBefore(tr1, tabla2.childNodes[0]);
-	}
-
-	switch (n) {
-    case 6:
-        str2="_________";
-        break;
-    case 7:
-        str2="_________";
-        break;
-    case 8:
-        str2="____ ____";
-        break;
-    case 9:
-        str2="____ ____";
-        break;
-    default :
-    	break;
-	}
-	if(str2 != null){
-		/*creamos linea*/
-		var linea2=document.createTextNode(str2);	
-		var tr2=document.createElement("tr");
-		var td2=document.createElement("td");		
-		td2.appendChild(linea2);
-		tr2.appendChild(td2);
-		var tabla3=document.getElementById("tabla3");
-		/*insertamos al inicio*/
-		tabla3.insertBefore(tr2, tabla3.childNodes[0]);
-	}
-	/*si es mutante, mostramos las sig. dos tablas, sino hay, pos no y ya*/
-	arreglo[j]=n;
-	j++;
-	buscadorDeMutante();
-
 }
+/*muestra o no las hexagramaY y hexagramaZ*/
+function visibilidad_Hexagrama(){
+	var HexagraY = document.getElementById("tabla2");
+	var HexagraZ = document.getElementById("tabla3");
 
-function borrarNodos() {
-    var lista = document.getElementById("tabla1");
-    while (lista.hasChildNodes()) {
-    lista.removeChild(lista.firstChild);
+		if(visible==false){
+			HexagraY.style.display="none";
+			HexagraZ.style.display="none";
+		}
+		else{
+			HexagraY.style.display="";
+			HexagraZ.style.display="";
+		}
+}
+//Limpiamos una linea de las tablas de Hexagramas
+function borrarNodo() {
+    var listaDeX = document.getElementById("tabla1");
+	var listaDeY = document.getElementById("tabla2");
+	var listaDeZ = document.getElementById("tabla3");
+    	listaDeX.removeChild(listaDeX.firstChild);
+    	listaDeY.removeChild(listaDeY.firstChild);
+    	listaDeZ.removeChild(listaDeZ.firstChild);
+
+    //Revisamos que en el arreglo no wxistan mas compuestos
+    arregloUno[j-1]= 0;
+		for (var x=0; x<j;  x++){
+    		if(arregloUno[x]==6 || arregloUno[x]==9){
+   	    		visible=true;
+   	    	break;
+    		}
+	    	else
+	    		visible=false;			
+		}
+	if(j==0){
+		j=0;
 	}
-	var lista2 = document.getElementById("tabla2");
-    while (lista2.hasChildNodes()) {
-    lista2.removeChild(lista2.firstChild);
+	else if(j>4){
+		j--;	  
+		visibilidadNombreTriagramas(0);	
 	}
-	var lista3 = document.getElementById("tabla3");
-    while (lista3.hasChildNodes()) {
-    lista3.removeChild(lista3.firstChild);
+	else{
+		j--;	  
 	}
-	//var i;
-	//for(i=0; i<j; i++){
-	//	j--;
-	//}
+
+
+	visibilidad_Hexagrama();
+}
+//Limpiamos la tabla HexagramaX, HexagramaY y HexagramaZ
+function limpiarTabla() {
+    var listaDeX = document.getElementById("tabla1");
+    var listaDeY = document.getElementById("tabla2");
+    var listaDeZ = document.getElementById("tabla3");
+    	while (listaDeX.hasChildNodes()) {
+    		listaDeX.removeChild(listaDeX.firstChild);
+    		listaDeY.removeChild(listaDeY.firstChild);
+    		listaDeZ.removeChild(listaDeZ.firstChild);
+		}
+//Reiniciamos todos los valores de la taba
 	arreglo =[];
 	j=0;
+	visible=false;
+	visibilidadNombreTriagramas(j);
 }
-
-function borrarNodo() {
-    var lista = document.getElementById("tabla1");
-    lista.removeChild(lista.firstChild);
-
-	var lista2 = document.getElementById("tabla2");
-    lista2.removeChild(lista2.firstChild);
-
-	var lista3 = document.getElementById("tabla3");
-    lista3.removeChild(lista3.firstChild);
-    j--;
-    buscadorDeMutante();
+/*Muestra la tabla de nombres de triagramas*/
+function visibilidadNombreTriagramas(j){
+	var Triagramas = document.getElementById("nombreTriagramas");
+	if(j==5){	
+			Triagramas.style.display="";
+			alert(j);
+	}
+	else{
+		Triagramas.style.display="none";
+	}
 }
-
-
-
