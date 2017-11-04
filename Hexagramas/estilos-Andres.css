@@ -1,0 +1,105 @@
+/*contenedor principal*/
+.container{
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	background-color: #DBD8D8;
+	height: 590px;
+	border: solid;
+	border-radius: 5px;
+	border-color: #5882FA;
+	border-width: 2px;
+}
+
+/*selector universal, tipo de fuente*/
+*{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+	background-image: url(http://data.whicdn.com/images/144885588/large.jpg);
+}
+/*header*/
+h1{
+	font-size: 365%;
+	color: #5882FA;
+	margin-top: 15%;
+	font-family: 'Bungee Shade', cursive;	
+}
+
+/*campos de texto*/
+input{
+	width: 90%;
+	color: #585858;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 150%;
+}
+/*estilos de las tablas*/
+table{
+	text-align: center;
+	margin: 10%; 
+	background-color: #5882FA;
+	font-size: 100%;
+	width: 100%;
+	color: white;
+}
+
+/*define pequeños bloques en una linea*/
+.short-block{
+	float: left;
+	display: inline-block;
+	width: 30%;
+	margin-left: 1%;
+}
+
+/*color de los botones cuando no son presionados*/
+.clase1{
+	padding: 2%;
+	background-color: #5882FA;
+	margin-top: 2%;
+	border: none;
+	font-size: 120%;
+	width: 30%;
+	color: white;
+	float: left;
+}
+/*color de los botones cuando estan siendo presionados*/
+.clase2{
+	padding: 2%;
+	background-color: #2E64FE;
+	margin-top: 2%;
+	border: none;
+	font-size: 120%;
+	width: 30%;
+	color: white;
+	float: left;
+}
+
+.quarter1{
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+
+.quarter2{
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+
+.quarter3{
+	width: 50%;
+	height: 50%;
+	float: left;
+	align-content: center;
+}
+
+.quarter4{
+	width: 50%;
+	height: 50%;
+	float: left;
+	background-color: #5882FA;
+	text-align: center;
+}
+

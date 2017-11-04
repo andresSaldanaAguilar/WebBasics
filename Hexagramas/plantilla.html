@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>Hexagramas</title>
+	<meta charset="utf-8">
 	<meta name="author" content="Saldaña Aguilar Andrés , Ariza Martinez Aristides">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<script src="scripts.js"></script>
 	<style>@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');</style>
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
 </head>
-<body>	
+<body onload="visibilidadNombreTriagramas(0)">
 <div class="container">
 	<!---primer cuadrante-->
 	<div class="quarter1"><h1>Hexagramas</h1></div>
@@ -28,16 +29,334 @@
 	</div>
 	<!---tercer cuadrante-->
 	<div class="quarter3">
-		<div><input type="number" id="x"></div>
-		<div><input type="number" id="y"></div>
-		<div><input type="number" id="z"></div>
+		<div><input type="number" id="x" max="3" min="2"></div>
+		<div><input type="number" id="y" max="3" min="2"></div>
+		<div><input type="number" id="z" max="3" min="2"></div>
 		<!--botones con funciones js para cambiar de color-->
 		<button type="submit" class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)" onclick="insertarFila(this)">Aceptar</button>
 		<button class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)"  onclick="borrarNodo(this)">Borrar Linea</button>
-		<button class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)" onclick="borrarNodos(this)">Borrar Todo</button>
+		<button class="clase1" onmouseover="cambiaColor(this)" onmouseout="cambiaColorOriginal(this)" onclick="limpiarTabla(this)">Borrar Todo</button>
 	</div>
-	<!---cuarto cuadrante-->
-	<div class="quarter4">Aqui va tu tabla man</div>
+
+		<!---cuarto cuadrante-->
+	<div class="quarter4">
+
+	</div>
 </div>
+	<!---quinto cuadrante	-->
+	<div>
+		<table id="nombreTriagramas">
+			<tr id="fila0">
+				<td id="col0">
+					Triagramas
+				</td>
+				<td id="col1">
+					_________<br>
+					_________<br>
+					_________<br>
+					Chi'en
+				</td>
+				<td id="col2">
+					____ ____<br>
+					____ ____<br>
+					_________<br>
+					Chen
+				</td>
+				<td id="col3">
+					____ ____<br>
+					_________<br>
+					____ ____<br>
+					K'an
+				</td>
+				<td id="col4">
+					_________<br>
+					____ ____<br>
+					____ ____<br>
+					Ken
+				</td>
+				<td id="col5">
+					____ ____<br>
+					____ ____<br>
+					____ ____<br>
+					K'un
+				</td>
+				<td id="col6">
+					_________<br>
+					_________<br>
+					____ ____<br>
+					Sun
+				</td>
+				<td id="col7">
+					_________<br>
+					____ ____<br>
+					_________<br>
+					Li
+				</td>
+				<td id="col8">
+					____ ____<br>
+					_________<br>
+					_________<br>
+					Tui
+				</td>
+			</tr>
+			<tr id="fila1">
+				<td id="10">
+					_________<br>
+					_________<br>
+					_________<br>
+					Chi'en
+				</td>
+				<td id="11">
+					<p>1</p>
+				</td>
+				<td id="12">
+					<p>34</p>
+				</td>
+				<td id="13">
+					<p>5</p>
+				</td>
+				<td id="14">
+					<p>26</p>
+				</td>
+				<td id="15">
+					<p>11</p>
+				</td>
+				<td id="16">
+					<p>9</p>
+				</td>
+				<td id="17">
+					<p>14</p>
+				</td>
+				<td id="18">
+					<p>43</p>
+				</td>
+			</tr>	
+			<tr id="fila2">
+				<td id="col20">
+					____ ____<br>
+					____ ____<br>
+					_________<br>
+					Chen
+				</td>
+				<td id="21">
+					<p>25</p>
+				</td>
+				<td id="22">
+					<p>51</p>
+				</td>
+				<td id="23">
+					<p>3</p>
+				</td>
+				<td id="24">
+					<p>27</p>
+				</td>
+				<td id="25">
+					<p>24</p>
+				</td>
+				<td id="26">
+					<p>42</p>
+				</td>
+				<td id="27">
+					<p>21</p>
+				</td>
+				<td id="28">
+					<p>17</p>
+				</td>
+			</tr>
+			<tr id="fila3">
+				<td id="30">
+					____ ____<br>
+					_________<br>
+					____ ____<br>
+					K'an
+				</td>
+				<td id="31">
+					<p>6</p>
+				</td>
+				<td id="32">
+					<p>40</p>
+				</td>
+				<td id="33">
+					<p>29</p>
+				</td>
+				<td id="34">
+					<p>4</p>
+				</td>
+				<td id="35">
+					<p>7</p>
+				</td>
+				<td id="36">
+					<p>59</p>
+				</td>
+				<td id="37">
+					<p>64</p>
+				</td>
+				<td id="38">
+					<p>7</p>
+				</td>
+			</tr>
+			<tr id="fila4">
+				<td id="col0">
+					_________<br>
+					____ ____<br>
+					____ ____<br>
+					Ken
+				</td>
+				<td id="41">
+					<p>33</p>
+				</td>
+				<td id="42">
+					<p>62</p>
+				</td>
+				<td id="43">
+					<p>39</p>
+				</td>
+				<td id="44">
+					<p>52</p>
+				</td>
+				<td id="45">
+					<p>15</p>
+				</td>
+				<td id="46">
+					<p>53</p>
+				</td>
+				<td id="47">
+					<p>56</p>
+				</td>
+				<td id="48">
+					<p>21</p>
+				</td>
+			</tr>
+			<tr id="fila5">
+				<td id="50">
+					____ ____<br>
+					____ ____<br>
+					____ ____<br>
+					K'un
+				</td>
+				<td id="51">
+					<p>12</p>
+				</td>
+				<td id="52">
+					<p>16</p>
+				</td>
+				<td id="53">
+					<p>8</p>
+				</td>
+				<td id="54">
+					<p>23</p>
+				</td>
+				<td id="55">
+					<p>2</p>
+				</td>
+				<td id="56">
+					<p>20</p>
+				</td>
+				<td id="57">
+					<p>35</p>
+				</td>
+				<td id="58">
+					<p>45</p>
+				</td>
+			</tr>
+			<tr id="fila6">
+				<td id="60">
+					_________<br>
+					_________<br>
+					____ ____<br>
+					Sun
+				</td>
+				<td id="61">
+					<p>44</p>
+				</td>
+				<td id="62">
+					<p>32</p>
+				</td>
+				<td id="63">
+					<p>48</p>
+				</td>
+				<td id="64">
+					<p>18</p>
+				</td>
+				<td id="65">
+					<p>46</p>
+				</td>
+				<td id="66">
+					<p>57</p>
+				</td>
+				<td id="67">
+					<p>50</p>
+				</td>
+				<td id="68">
+					<p>28</p>
+				</td>
+			</tr>
+			<tr id="fila7">
+				<td id="70">
+					_________<br>
+					____ ____<br>
+					_________<br>
+					Li
+				</td>
+				<td id="71">
+					<p>13</p>
+				</td>
+				<td id="72">
+					<p>55</p>
+				</td>
+				<td id="73">
+					<p>63</p>
+				</td>
+				<td id="74">
+					<p>22</p>
+				</td>
+				<td id="75">
+					<p>36</p>
+				</td>
+				<td id="76">
+					<p>37</p>
+				</td>
+				<td id="77">
+					<p>30</p>
+				</td>
+				<td id="78">
+					<p>49</p>
+				</td>
+			</tr>
+			<tr id="fila8">
+				<td id="80">
+					____ ____<br>
+					_________<br>
+					_________<br>
+					Tui
+				</td>
+				<td id="81">
+					<p>10</p>
+				</td>
+				<td id="82">
+					<p>54</p>
+				</td>
+				<td id="83">
+					<p>60</p>
+				</td>
+				<td id="84">
+					<p>41</p>
+				</td>
+				<td id="85">
+					<p>19</p>
+				</td>
+				<td id="86">
+					<p>61</p>
+				</td>
+				<td id="87">
+					<p>38</p>
+				</td>
+				<td id="88">
+					<p>58</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
 </body>
 </html>
