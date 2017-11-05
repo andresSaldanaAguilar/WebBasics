@@ -23,6 +23,11 @@ function resetearColor(){
     }
 }
 
+function randomColor(titulo){
+	var str="#"+((1<<24)*Math.random()|0).toString(16);
+	titulo.style.color=""+str;
+}
+
 function cambiaColor(nodo){
 	nodo.setAttribute("class","clase2");
 }

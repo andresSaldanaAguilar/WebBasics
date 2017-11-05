@@ -11,22 +11,9 @@
 </head>
 <body onload="visibilidadNombreTriagramas(0)">
 <div class="container">
-	<!---primer cuadrante-->
-	<div class="quarter1"><h1>Hexagramas</h1></div>
-	<!---segundo cuadrante-->
-	<div class="quarter2">
-		<div class="short-block">
-		<table id="tabla1" class="hexagrama"></table>
-		</div>	
+	<!---primer y segundo cuadrante-->
+	<div class="quarter1"><h1 id="titulo" onmouseover="randomColor(this)">Hexagramas</h1></div>
 
-		<div class="short-block">
-		<table id="tabla2" class="hexagrama"></table>
-		</div>	
-
-		<div class="short-block">
-		<table id="tabla3" class="hexagrama"></table>
-		</div>
-	</div>
 	<!---tercer cuadrante-->
 	<div class="quarter3">
 		<div><input type="number" id="x" max="3" min="2"></div>
@@ -40,7 +27,17 @@
 
 		<!---cuarto cuadrante-->
 	<div class="quarter4">
+		<div class="short-block">
+		<table id="tabla1" class="hexagrama"></table>
+		</div>	
 
+		<div class="short-block">
+		<table id="tabla2" class="hexagrama"></table>
+		</div>	
+
+		<div class="short-block">
+		<table id="tabla3" class="hexagrama"></table>
+		</div>
 	</div>
 </div>
 	<!---quinto cuadrante	-->

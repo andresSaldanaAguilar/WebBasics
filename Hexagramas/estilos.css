@@ -21,10 +21,11 @@ body{
 }
 /*header*/
 h1{
-	font-size: 365%;
+	font-size: 665%;
 	color: #5882FA;
-	margin-top: 15%;
+	margin-top: 1%;
 	font-family: 'Bungee Shade', cursive;	
+	text-align: center;
 }
 
 /*campos de texto*/
@@ -89,16 +90,12 @@ input{
 }
 
 .quarter1{
-	width: 50%;
+	width: 100%;
 	height: 50%;
 	float: left;
 }
 
-.quarter2{
-	width: 50%;
-	height: 50%;
-	float: left;
-}
+
 
 .quarter3{
 	width: 50%;
@@ -108,10 +105,10 @@ input{
 }
 
 .quarter4{
+	margin-top: 3%;
 	width: 50%;
 	height: 50%;
 	float: left;
-	background-color: #5882FA;
 	text-align: center;
 }
 
