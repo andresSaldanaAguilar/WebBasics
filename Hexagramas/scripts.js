@@ -214,9 +214,10 @@ function colorearCasilla(){
 				columna ="7";
 		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
 				columna ="8";
+	 var listaDeX = document.getElementById(fila+columna);
+	 listaDeX.style.backgroundColor="#f34";
 	}
 	else{
-
 	//Hexagrama Y
 		for (var i=0; i<3; i++) {
 			if (arregloUno[i]==7 || arregloUno[i]==9) {
@@ -244,7 +245,6 @@ function colorearCasilla(){
 				fila ="7";
 		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
 				fila ="8";
-		alert(fila+"aA");
 
 		for (var i=3; i<6; i++) {
 			if (arregloUno[i]==7 || arregloUno[i]==9) {
@@ -271,7 +271,7 @@ function colorearCasilla(){
 				columna ="7";
 		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
 				columna ="8";
-		alert(columna);
+
 	 var listaDeX = document.getElementById(fila+columna);
 	 listaDeX.style.backgroundColor="#f34";
 	//Hexagrama Z
@@ -301,7 +301,6 @@ function colorearCasilla(){
 				fila ="7";
 		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
 				fila ="8";
-		alert(fila+"aA");
 
 		for (var i=3; i<6; i++) {
 			if (arregloUno[i]==7 || arregloUno[i]==6) {
@@ -328,7 +327,7 @@ function colorearCasilla(){
 				columna ="7";
 		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
 				columna ="8";
-		alert(columna);		
+
 	 var listaDeX = document.getElementById(fila+columna);
 	 listaDeX.style.backgroundColor="#f34";
 	}
