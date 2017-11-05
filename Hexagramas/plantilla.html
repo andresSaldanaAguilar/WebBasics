@@ -16,15 +16,15 @@
 	<!---segundo cuadrante-->
 	<div class="quarter2">
 		<div class="short-block">
-		<table id="tabla1"></table>
+		<table id="tabla1" class="hexagrama"></table>
 		</div>	
 
 		<div class="short-block">
-		<table id="tabla2"></table>
+		<table id="tabla2" class="hexagrama"></table>
 		</div>	
 
 		<div class="short-block">
-		<table id="tabla3"></table>
+		<table id="tabla3" class="hexagrama"></table>
 		</div>
 	</div>
 	<!---tercer cuadrante-->
@@ -45,7 +45,7 @@
 </div>
 	<!---quinto cuadrante	-->
 	<div>
-		<table id="nombreTriagramas">
+		<table id="nombreTriagramas" class="triagrama"s>
 			<tr id="fila0">
 				<td id="col0">
 					Triagramas
@@ -107,28 +107,28 @@
 					Chi'en
 				</td>
 				<td id="11">
-					<p>1</p>
+					<p id="b1" onmouseover ="muestraAlert(this.id)">1</p>
 				</td>
 				<td id="12">
-					<p>34</p>
+					<p id="b34" onmouseover="muestraAlert(this.id)">34</p>
 				</td>
 				<td id="13">
-					<p>5</p>
+					<p id="b5" onmouseover="muestraAlert(this.id)">5</p>
 				</td>
 				<td id="14">
-					<p>26</p>
+					<p id="b26" onmouseover="muestraAlert(this.id)">26</p>
 				</td>
 				<td id="15">
-					<p>11</p>
+					<p id="b11" onmouseover="muestraAlert(this.id)">11</p>
 				</td>
 				<td id="16">
-					<p>9</p>
+					<p id="b9" onmouseover="muestraAlert(this.id)">9</p>
 				</td>
 				<td id="17">
-					<p>14</p>
+					<p id="b14" onmouseover="muestraAlert(this.id)">14</p>
 				</td>
 				<td id="18">
-					<p>43</p>
+					<p id="b43" onmouseover="muestraAlert(this.id)">43</p>
 				</td>
 			</tr>	
 			<tr id="fila2">
@@ -357,6 +357,15 @@
 			</tr>
 		</table>
 	</div>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
 
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <p id="parrafo">Some text in the Modal..</p>
+	  </div>
+
+	</div>
 </body>
 </html>

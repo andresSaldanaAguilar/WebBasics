@@ -36,14 +36,26 @@ input{
 	font-size: 150%;
 }
 /*estilos de las tablas*/
-table{
+.hexagrama{
 	text-align: center;
-	margin: 10%; 
+	margin-left: 3%;
+	margin-bottom: 9%; 
 	background-color: #5882FA;
 	font-size: 100%;
-	width: 100%;
+	width: 90%;
 	color: white;
 }
+/*estilos de las tablas*/
+.triagrama{
+	text-align: center;
+	margin-top: 2%;
+	margin-left: 10%;
+	background-color: #5882FA;
+	font-size: 100%;
+	width: 80%;
+	color: white;
+}
+
 
 /*define pequeños bloques en una linea*/
 .short-block{
@@ -102,4 +114,5 @@ table{
 	background-color: #5882FA;
 	text-align: center;
 }
+
 

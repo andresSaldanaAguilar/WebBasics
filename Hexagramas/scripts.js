@@ -3,6 +3,17 @@ var arregloUno = [];
 var j=0;
 var visible=false;
 
+/*muestra las descripciones*/
+function muestraAlert(boton){
+	if(boton=="b1"){
+		alert("1.Cielo.Lo creativo. El principio creador.");
+	}
+	if(boton=="b34"){
+		alert("34.Tierra. Lo perceptivo. El principio pasivo.");
+	}
+	//..... siguen las demas validaciones
+}
+
 function cambiaColor(nodo){
 	nodo.setAttribute("class","clase2");
 }
@@ -21,6 +32,8 @@ function insertarFila(){
 		alert("Se requiere un valor numérico en todos los campos");
 	else if(x>3 || y>3 || z>3)
 		alert("Los valores exceden los permitidos");
+	else if(x<2 || y<2 || z<2)
+		alert("Los valores son menores los permitidos");
 	else if(j>5)
 		alert("Una línea mas excedería el tamaño de un Hexagrama");	
 	else{
@@ -334,3 +347,4 @@ function colorearCasilla(){
 	}
 
 }
+
