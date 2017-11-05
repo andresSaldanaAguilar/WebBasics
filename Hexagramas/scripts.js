@@ -71,7 +71,7 @@ function insertarFila(){
 		visibilidad_Hexagrama();
 		visibilidadNombreTriagramas(j);
 		j++;
-		//alert(j);
+		alert(j);
 	}
 }
 /*muestra o no las hexagramaY y hexagramaZ*/
