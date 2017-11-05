@@ -13,6 +13,15 @@ function muestraAlert(boton){
 	}
 	//..... siguen las demas validaciones
 }
+//regresa el color de las celdas de la tabla al original.
+function resetearColor(){
+    var x = document.getElementById("nombreTriagramas").getElementsByTagName("td");
+    var n=0;
+    while(n<x.length){
+    	x[n].style.backgroundColor = "#5882FA"; 
+    	n++;
+    }
+}
 
 function cambiaColor(nodo){
 	nodo.setAttribute("class","clase2");
@@ -129,8 +138,7 @@ function borrarNodo() {
 	else{
 		j--;	  
 	}
-
-
+	resetearColor();
 	visibilidad_Hexagrama();
 }
 //Limpiamos la tabla HexagramaX, HexagramaY y HexagramaZ
@@ -144,10 +152,11 @@ function limpiarTabla() {
     		listaDeZ.removeChild(listaDeZ.firstChild);
 		}
 //Reiniciamos todos los valores de la taba
-	arreglo =[];
+	arregloUno= [];
 	j=0;
 	visible=false;
 	visibilidadNombreTriagramas(j);
+	resetearColor();
 }
 /*Muestra la tabla de nombres de triagramas*/
 function visibilidadNombreTriagramas(j){
