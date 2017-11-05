@@ -71,7 +71,6 @@ function insertarFila(){
 		visibilidad_Hexagrama();
 		visibilidadNombreTriagramas(j);
 		j++;
-		alert(j);
 	}
 }
 /*muestra o no las hexagramaY y hexagramaZ*/
@@ -142,9 +141,196 @@ function visibilidadNombreTriagramas(j){
 	var Triagramas = document.getElementById("nombreTriagramas");
 	if(j==5){	
 			Triagramas.style.display="";
-			alert(j);
+				colorearCasilla();
 	}
 	else{
 		Triagramas.style.display="none";
 	}
+}
+function colorearCasilla(){
+	var Chien = ["1", "1", "1"];
+	var Chen = ["1", "0", "0"];
+	var Kan = ["0", "1", "0"];
+	var Ken = ["0", "0", "1"];
+	var Kun = ["0", "0", "0"];
+	var Sun = ["0", "1", "1"];
+	var Li = ["1", "0", "1"];
+	var Tui = ["1", "1", "0"];
+	var fila;
+	var columna;
+	var ban1, ban2, ban3;
+	var aux =[];
+	//Esta condicion se ejecuta solo cuando existe una sola tabla de Hexagramas
+	if(visible==false){
+		for (var i=0; i<3; i++) {
+			if (arregloUno[i]==7) {
+				aux[i] =1;
+			}
+			else{
+				aux[i] =0;
+			}
+		}
+
+		//Primero Fila
+		if(Chien[0]==aux[0] && Chien[1]==aux[1] && Chien[2]==aux[2])
+				fila ="1";
+		else if(Chen[0]==aux[0] && Chen[1]==aux[1] && Chen[2]==aux[2])
+				fila ="2";
+		else if(Kan[0]==aux[0] && Kan[1]==aux[1] && Kan[2]==aux[2])
+				fila ="3";
+		else if(Ken[0]==aux[0] && Ken[1]==aux[1] && Ken[2]==aux[2])
+				fila ="4";
+		else if(Kun[0]==aux[0] && Kun[1]==aux[1] && Kun[2]==aux[2])
+				fila ="5";
+		else if(Sun[0]==aux[0] && Sun[1]==aux[1] && Sun[2]==aux[2])
+				fila ="6";
+		else if(Li[0]==aux[0] && Li[1]==aux[1] && Li[2]==aux[2])
+				fila ="7";
+		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
+				fila ="8";
+
+		for (var i=3; i<6; i++) {
+			if (arregloUno[i]==7) {
+				aux[i-3] =1;
+			}
+			else{
+				aux[i-3] =0;
+			}
+		}
+		//Ahora columna
+		if(Chien[0]==aux[0] && Chien[1]==aux[1] && Chien[2]==aux[2])
+				columna ="1";
+		else if(Chen[0]==aux[0] && Chen[1]==aux[1] && Chen[2]==aux[2])
+				columna ="2";
+		else if(Kan[0]==aux[0] && Kan[1]==aux[1] && Kan[2]==aux[2])
+				columna ="3";
+		else if(Ken[0]==aux[0] && Ken[1]==aux[1] && Ken[2]==aux[2])
+				columna ="4";
+		else if(Kun[0]==aux[0] && Kun[1]==aux[1] && Kun[2]==aux[2])
+				columna ="5";
+		else if(Sun[0]==aux[0] && Sun[1]==aux[1] && Sun[2]==aux[2])
+				columna ="6";
+		else if(Li[0]==aux[0] && Li[1]==aux[1] && Li[2]==aux[2])
+				columna ="7";
+		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
+				columna ="8";
+	}
+	else{
+
+	//Hexagrama Y
+		for (var i=0; i<3; i++) {
+			if (arregloUno[i]==7 || arregloUno[i]==9) {
+				aux[i] =1;
+			}
+			else{
+				aux[i] =0;
+			}
+		}
+
+		//Primero Fila
+		if(Chien[0]==aux[0] && Chien[1]==aux[1] && Chien[2]==aux[2])
+				fila ="1";
+		else if(Chen[0]==aux[0] && Chen[1]==aux[1] && Chen[2]==aux[2])
+				fila ="2";
+		else if(Kan[0]==aux[0] && Kan[1]==aux[1] && Kan[2]==aux[2])
+				fila ="3";
+		else if(Ken[0]==aux[0] && Ken[1]==aux[1] && Ken[2]==aux[2])
+				fila ="4";
+		else if(Kun[0]==aux[0] && Kun[1]==aux[1] && Kun[2]==aux[2])
+				fila ="5";
+		else if(Sun[0]==aux[0] && Sun[1]==aux[1] && Sun[2]==aux[2])
+				fila ="6";
+		else if(Li[0]==aux[0] && Li[1]==aux[1] && Li[2]==aux[2])
+				fila ="7";
+		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
+				fila ="8";
+		alert(fila+"aA");
+
+		for (var i=3; i<6; i++) {
+			if (arregloUno[i]==7 || arregloUno[i]==9) {
+				aux[i-3] =1;
+			}
+			else{
+				aux[i-3] =0;
+			}
+		}
+		//Ahora columna
+		if(Chien[0]==aux[0] && Chien[1]==aux[1] && Chien[2]==aux[2])
+				columna ="1";
+		else if(Chen[0]==aux[0] && Chen[1]==aux[1] && Chen[2]==aux[2])
+				columna ="2";
+		else if(Kan[0]==aux[0] && Kan[1]==aux[1] && Kan[2]==aux[2])
+				columna ="3";
+		else if(Ken[0]==aux[0] && Ken[1]==aux[1] && Ken[2]==aux[2])
+				columna ="4";
+		else if(Kun[0]==aux[0] && Kun[1]==aux[1] && Kun[2]==aux[2])
+				columna ="5";
+		else if(Sun[0]==aux[0] && Sun[1]==aux[1] && Sun[2]==aux[2])
+				columna ="6";
+		else if(Li[0]==aux[0] && Li[1]==aux[1] && Li[2]==aux[2])
+				columna ="7";
+		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
+				columna ="8";
+		alert(columna);
+	 var listaDeX = document.getElementById(fila+columna);
+	 listaDeX.style.backgroundColor="#f34";
+	//Hexagrama Z
+		for (var i=0; i<3; i++) {
+			if (arregloUno[i]==7 || arregloUno[i]==6) {
+				aux[i] =1;
+			}
+			else{
+				aux[i] =0;
+			}
+		}
+
+		//Primero Fila
+		if(Chien[0]==aux[0] && Chien[1]==aux[1] && Chien[2]==aux[2])
+				fila ="1";
+		else if(Chen[0]==aux[0] && Chen[1]==aux[1] && Chen[2]==aux[2])
+				fila ="2";
+		else if(Kan[0]==aux[0] && Kan[1]==aux[1] && Kan[2]==aux[2])
+				fila ="3";
+		else if(Ken[0]==aux[0] && Ken[1]==aux[1] && Ken[2]==aux[2])
+				fila ="4";
+		else if(Kun[0]==aux[0] && Kun[1]==aux[1] && Kun[2]==aux[2])
+				fila ="5";
+		else if(Sun[0]==aux[0] && Sun[1]==aux[1] && Sun[2]==aux[2])
+				fila ="6";
+		else if(Li[0]==aux[0] && Li[1]==aux[1] && Li[2]==aux[2])
+				fila ="7";
+		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
+				fila ="8";
+		alert(fila+"aA");
+
+		for (var i=3; i<6; i++) {
+			if (arregloUno[i]==7 || arregloUno[i]==6) {
+				aux[i-3] =1;
+			}
+			else{
+				aux[i-3] =0;
+			}
+		}
+		//Ahora columna
+		if(Chien[0]==aux[0] && Chien[1]==aux[1] && Chien[2]==aux[2])
+				columna ="1";
+		else if(Chen[0]==aux[0] && Chen[1]==aux[1] && Chen[2]==aux[2])
+				columna ="2";
+		else if(Kan[0]==aux[0] && Kan[1]==aux[1] && Kan[2]==aux[2])
+				columna ="3";
+		else if(Ken[0]==aux[0] && Ken[1]==aux[1] && Ken[2]==aux[2])
+				columna ="4";
+		else if(Kun[0]==aux[0] && Kun[1]==aux[1] && Kun[2]==aux[2])
+				columna ="5";
+		else if(Sun[0]==aux[0] && Sun[1]==aux[1] && Sun[2]==aux[2])
+				columna ="6";
+		else if(Li[0]==aux[0] && Li[1]==aux[1] && Li[2]==aux[2])
+				columna ="7";
+		else if(Tui[0]==aux[0] && Tui[1]==aux[1] && Tui[2]==aux[2])
+				columna ="8";
+		alert(columna);		
+	 var listaDeX = document.getElementById(fila+columna);
+	 listaDeX.style.backgroundColor="#f34";
+	}
+
 }
