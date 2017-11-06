@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.container div, .container1 div{
+			border: 1px solid;
+			padding: 10px;
+		} 
+	@media(min-width: 768px){
+		.container{
+			display: flex;
+			justify-content: space-around;
+		}
+		.box1{
+			flex: 1;
+			z-index: -1;
+		}
+		.box2{
+			flex: 1;
+		}
+		.box3{
+			flex: 1;
+		}
+	}
+
+	.box4{
+		flex-basis: 12%;
+	}
+	.container1{
+		display: flex;
+		flex-wrap: wrap;
+	}
+		
+	</style>	
+</head>
+<body>
+	
+	<div class="container">
+		<div class="box1">
+			<h3>Box one</h3>
+			<p>A paragraph.</p>
+		</div>
+		<div class="box2">
+			<h3>Box two</h3>
+			<p>A paragraph.</p>
+		</div>
+		<div class="box3">
+			<h3>Box three</h3>
+			<p>A paragraph.</p>
+		</div>
+	</div>
+		<div class="container1">
+		<div class="box4">
+			<h3>Box one</h3>
+			<p>A paragraph.</p>
+		</div>
+		<div class="box4">
+			<h3>Box two</h3>
+			<p>A paragraph.</p>
+		</div>
+		<div class="box4">
+			<h3>Box three</h3>
+			<p>A paragraph.</p>
+		</div>
+		<div class="box4">
+			<h3>Box three</h3>
+			<p>A paragraph.</p>
+		</div>
+		<div class="box4">
+			<h3>Box three</h3>
+			<p>A paragraph.</p>
+		</div>
+		<div class="box4">
+			<h3>Box three</h3>
+			<p>A paragraph.</p>
+		</div>
+	</div>
+</body>
+</html>

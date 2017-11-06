@@ -5,13 +5,265 @@ var visible=false;
 
 /*muestra las descripciones*/
 function muestraAlert(boton){
-	if(boton=="b1"){
-		alert("1.Cielo.Lo creativo. El principio creador.");
-	}
-	if(boton=="b34"){
-		alert("34.Tierra. Lo perceptivo. El principio pasivo.");
-	}
-	//..... siguen las demas validaciones
+
+
+		if(boton=="b1"){
+			alert("1.Cielo. Lo creativo. El principio generador");
+		}
+
+		if(boton=="b2"){
+			alert("2.Tierra. Lo receptivo. El principio pasivo");
+		}
+
+		if(boton=="b3"){
+			alert("3.Acumular. El obstáculo inicial. La dificultad del comienzo");
+		}
+
+		if(boton=="b4"){
+			alert("4.Juventud. El joven necio. La inmadurez");
+		}
+
+		if(boton=="b5"){
+			alert("5.Esperar. La espera. La maduración");
+		}
+
+		if(boton=="b6"){
+			alert("6.Disputar. El conflicto. El pleito");
+		}
+
+		if(boton=="b7"){
+			alert("7.Ejercito. La legión");
+		}
+
+		if(boton=="b8"){
+			alert("8.solidaridad. La unión");
+		}
+
+		if(boton=="b9"){
+			alert("9.Animalito doméstico. La pequeña fuerza");
+		}
+
+		if(boton=="b10"){
+			alert("10.Caminar.El porte. El paso cauteloso");
+		}
+
+
+		if(boton=="b11"){
+			alert("11.Prosperidad. La paz. La armonía");
+		}
+
+		if(boton=="b12"){
+			alert("12.Cierre. El estancamiento. Lo inerte");
+		}
+
+		if(boton=="b13"){
+			alert("13.Hombres reunidos. La unión comunitaria");
+		}
+
+		if(boton=="b14"){
+			alert("14.Gran dominio. La gran posición Lo que se tiene de más");
+		}
+
+		if(boton=="b15"){
+			alert("15.Condescencia. La modestia. La humildad");
+		}
+
+		if(boton=="b16"){
+			alert("16.Ocuparse. El entusiasmo. La algarabía");
+		}
+
+		if(boton=="b17"){
+			alert("17.Conformarse. La continuidad. El seguimiento");
+		}
+
+		if(boton=="b18"){
+			alert("18.Destrucción. La reconstrucción. La labor de lo corrompido");
+		}
+
+		if(boton=="b19"){
+			alert("19.Acercarse. Lo que va llegando");
+		}
+
+		if(boton=="b20"){
+			alert("20.Observar. La contemplación");
+		}
+
+
+		if(boton=="b21"){
+			alert("21.Quebrar mordiendo. La dentallada. La filosa mordedura");
+		}
+		
+
+		if(boton=="b22"){
+			alert("22.Adornar. La elegancia. La gracia");
+		}
+
+		if(boton=="b23"){
+			alert("23.Resquebrajar. La desintegración. El derrumbe");
+		}
+
+		if(boton=="b24"){
+			alert("24.Regresar. El retorno. Lo que vuelve");
+		}
+
+		if(boton=="b25"){
+			alert("25.Sinceridad. La inocencia. La naturalidad");
+		}
+
+		if(boton=="b26"){
+			alert("26.Fuerza educadora. El poder de lo fuerte. La gran acumulación");
+		}
+
+		if(boton=="b27"){
+			alert("27.Nutrirse. La alimentación. Las fauces");
+		}
+
+		if(boton=="b28"){
+			alert("28.Excesos. La preponderancia de lo grande");
+		}
+
+		if(boton=="b29"){
+			alert("29.Peligro. Lo abismal. La caida");
+		}		
+		if(boton=="b30"){
+			alert("30.Distinguir. El resplandor. Lo adherente");
+		}
+
+		if(boton=="b31"){
+			alert("31.Unir. La influencia. La atracción");
+		}
+
+		if(boton=="b32"){
+			alert("32.Luna creciente. La duración. La permanencia");
+		}
+
+		if(boton=="b33"){
+			alert("33.Retirarse. El repliegue");
+		}
+		
+		if(boton=="b34"){
+			alert("34.Gran fuerza. El gran vigor");
+		}
+
+		if(boton=="b35"){
+			alert("35.Progresar. El avance");
+		}
+		if(boton=="b36"){
+			alert("36.Luz que se apaga. El oscurecimiento");
+		}
+		if(boton=="b37"){
+			alert("37.Gente con familia. El clan");
+		}
+
+		if(boton=="b38"){
+			alert("38.Contraste. La oposición. El antagonismo");
+		}
+
+		if(boton=="b39"){
+			alert("39.Dificultad. El obstáculo. El impedimento");
+		}
+
+		if(boton=="b40"){
+			alert("40.Explicar. La liberación. El alivio");
+		}
+
+		if(boton=="b41"){
+			alert("41.Perder. La disminución");
+		}
+
+
+		if(boton=="b42"){
+			alert("42.Evolución. El aumento. La ganancia");
+		}
+
+		if(boton=="b43"){
+			alert("43.Decidir. El desbordamiento. La resolución");
+		}
+
+
+		if(boton=="b44"){
+			alert("44.Encontrarse. El acoplamiento");
+		}
+
+		if(boton=="b45"){	
+			alert("45.Cosechar. La reunión. La convergencia");
+		}
+
+		if(boton=="b46"){
+			alert("46.Subir. El ascenso. La escalada");
+		}
+
+		if(boton=="b47"){
+			alert("47.Angustia. La pesadumbre. El agotamiento");
+		}
+
+		if(boton=="b48"){
+			alert("48.El pozo de agua. La fuente");
+		}
+
+		if(boton=="b49"){
+			alert("49.Renovar. La revolución. El cambio");
+		}
+
+		if(boton=="b50"){
+			alert("50.La caldera. Lo alquímico");
+		}
+
+
+		if(boton=="b51"){
+			 alert("51.Trueno. La conmoción. Lo suscitativo");
+		}
+
+		if(boton=="b52"){
+			alert("52.Cimientos. La quietud. La detención");
+		}
+
+		if(boton=="b53"){
+			alert("53.Evolución. El progreso gradual");
+		}
+
+		if(boton=="b54"){
+			alert("54.Desposar a la hija menor. La doncella");
+		}
+		if(boton=="b55"){
+			alert("55.Abundancia. La plenitud");
+		}	
+
+		if(boton=="b56"){
+			alert("56.Viajero. El andariego");
+		}
+
+		if(boton=="b57"){
+			alert("57.Viento. Lo penetrante. Lo suave");
+		}
+
+		if(boton=="b58"){
+			alert("58.Recoger. La serenidad. La satisfacción");
+		}
+
+		if(boton=="b59"){
+			alert("59.Confusión. La dispersión. La disolución");
+		}
+
+		if(boton=="b60"){
+			alert("60.Moderación. La restricción. La limitación");
+		}
+
+		if(boton=="b61"){
+			alert("61.Fe interior. La verdad interior");
+		}
+
+		if(boton=="b62"){
+			alert("62.Pequeñas cosas importantes. La pequeña preponderancia");
+		}
+
+		if(boton=="b63"){
+			alert("63.Conclusiones. Después de la realización");
+		}
+
+		if(boton=="b64"){
+			alert("64.Inconcluso. Antes de la realización");
+		}	
 }
 //regresa el color de las celdas de la tabla al original.
 function resetearColor(){
