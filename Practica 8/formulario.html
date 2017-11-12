@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="scripts.js"></script>
+	<title>Cookie</title>
+</head>
+<body onload="getCookie()">	
+	<form>
+		<fieldset>
+			<legend><h1>Nombre</h1></legend>
+				<table border="0">
+					<tr>
+						<td align="center">
+							<input type="text" id="nombre"></input>
+						</td>
+						<td>
+							<input type="text" id="paterno"></input>
+						</td>
+						<td>
+							<input type="text" id="materno"></input>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Nombre de pila</label>
+						</td>
+						<td>
+							<label>Apellido paterno</label>
+						</td>
+						<td>
+							<label>Apellido materno</label>
+						</td>
+					</tr>			
+				</table>
+		</fieldset>
+
+		<br>
+		
+		<fieldset>
+			<legend><h1>Dirección</h1></legend>
+			<table border="0">
+				<tr>
+						<td align="center">
+							<input type="text" id="calle"></input>
+						</td>
+						<td>
+							<input type="text" id="numero_calle"></input>
+						</td>
+						<td>
+							<input type="text" id="colonia"></input>
+						</td>
+						<td>
+							<input type="text" id="cp"></input>
+						</td>
+
+						<td>
+						<select id="estado">
+						<option id="Oaxaca" value="Oaxaca">Oaxaca</option>
+						<option id="Sinaloa" value="Sinaloa">Sinaloa</option>
+						<option id="Queretaro" value="Queretaro">Queretaro</option>
+						<option id="Baja California Sur" value="Baja California Sur">Baja California Sur</option>
+						<option id="Baja California" value="Baja California">Baja California</option>
+						<option id="Sonora" value="Sonora">Sonora</option>
+						<option id="Chihuahua" value="Chihuahua">Chihuahua</option>
+						<option id="Coahuila" value="Coahuila">Coahuila</option>
+						<option id="Nuevo Leon" value="Nuevo Leon">Nuevo Leon</option>
+						<option id="Tamaulipas" value="Tamaulipas">Tamaulipas</option>
+						<option id="Durango" value="Durango">Durango</option>
+						<option id="Zatecas" value="Zatecas">Zatecas</option>
+						<option id="San Luis Potosi" value="San Luis Potosi">San Luis Potosi</option>
+						<option id="Jalisco" value="Jalisco">Jalisco</option>
+						<option id="Michoacan" value="Michoacan">Michoacan</option>
+						<option id="Durango" value="Durango">Durango</option>
+						<option id="Nayarit" value="Nayarit">Nayarit</option>
+						<option id="Aguascalientes" value="Aguascalientes">Aguascalientes</option>
+						<option id="Colima" value="Colima">Colima</option>
+						<option id="Guanajauto" value="Guanajauto">Guanajauto</option>
+						<option id="Queretaro" value="Queretaro">Queretaro</option>
+						<option id="Estado de Mexico" value="Estado de Mexico">Estado de Mexico</option>
+						<option id="CDMX" value="CDMX">CDMX</option>
+						<option id="Hidalgo" value="Hidalgo">Hidalgo</option>
+						<option id="Morelos" value="Morelos">Morelos</option>
+						<option id="Veracruz" value="Veracruz">Veracruz</option>
+						<option id="Tlaxcala" value="Tlaxcala">Tlaxcala</option>
+						<option id="Puebla" value="Puebla">Puebla</option>
+						<option id="Oaxaca" value="Oaxaca">Oaxaca</option>
+						<option id="Chiapas" value="Chiapas">Chiapas</option>
+						<option id="Tabasco" value="Tabasco">Tabasco</option>
+						<option id="Campeche" value="Campeche">Campeche</option>
+						<option id="Yucatán" value="Yucatán">Yucatán</option>
+						<option id="Quintana Roo" value="Quintana Roo">Quintana Roo</option>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Calle</label>
+					</td>
+					<td>
+						<label>No.</label>
+					</td>
+					<td>
+						<label>Colonia</label>
+					</td>
+
+					<td>
+						<label>CP</label>
+					</td>
+					<td>
+						<label>Estado</label>
+					</td>
+				</tr>	
+			</table>
+		</fieldset>
+
+		<br>
+		
+		<fieldset>
+			<legend><h1>Datos personales</h1></legend>
+				<table border="0">
+						<tr>
+							<td align="center">
+								<label>Sexo:</label>
+								<input type="radio" name="sexo" id="masculino" value="masculino">Masculino</input>
+								<input type="radio" name="sexo" id="femenino" value="femenino"> Femenino</input>
+							</td>
+							<td align="center">
+								<label>Fecha de nacimiento:</label>
+								<select name="dia" id="dia">
+									<option id="1" value="1">1</option>
+									<option id="2" value="2">2</option>
+									<option id="3" value="3">3</option>
+									<option id="4" value="4">4</option>
+									<option id="5" value="5">5</option>
+									<option id="6" value="6">6</option>
+									<option id="7" value="7">7</option>
+									<option id="8" value="8">8</option>
+									<option id="9" value="9">9</option>
+									<option id="10" value="10">10</option>
+									<option id="11" value="11">11</option>
+									<option id="12" value="12">12</option>
+									<option id="13" value="13">13</option>
+									<option id="14" value="14">14</option>
+									<option id="15" value="15">15</option>
+									<option id="16" value="16">16</option>
+									<option id="17" value="17">17</option>
+									<option id="18" value="18">18</option>
+									<option id="19" value="19">19</option>
+									<option id="20" value="20">20</option>
+									<option id="21" value="21">21</option>
+									<option id="22" value="22">22</option>
+									<option id="23" value="23">23</option>
+									<option id="24" value="24">24</option>
+									<option id="25" value="25">25</option>
+									<option id="26" value="26">26</option>
+									<option id="27" value="27">27</option>
+									<option id="28" value="28">28</option>
+									<option id="29" value="29">29</option>
+									<option id="30" value="30">30</option>
+									<option id="31" value="31">31</option>
+								</select>
+								<select name="mes" id="mes">
+									<option id="enero" value="enero">Enero</option>
+									<option id="febrero" value="febrero">Febrero</option>
+									<option id="marzo" value="marzo">Marzo</option>
+									<option id="abril" value="abril">Abril</option>
+									<option id="mayo" value="mayo">Mayo</option>
+									<option id="junio" value="junio">Junio</option>
+									<option id="julio" value="julio">Julio</option>
+									<option id="agosto" value="agosto">Agosto</option>
+									<option id="septiembre" value="septiembre">Septiembre</option>
+									<option id="octubre" value="octubre">Octubre</option>
+									<option id="noviembre" value="noviembre">Noviembre</option>
+									<option id="diciembre" value="diciembre">Diciembre</option>
+								</select>
+								<select name="anio" id="anio">
+									<option id="1990" value="1990">1990</option>
+									<option id="1991" value="1991">1991</option>
+									<option id="1992" value="1992">1992</option>
+									<option id="1993" value="1993">1993</option>
+									<option id="1994" value="1994">1994</option>
+									<option id="1995" value="1995">1995</option>
+									<option id="1996" value="1996">1996</option>
+									<option id="1997" value="1997">1997</option>
+									<option id="1998" value="1998">1998</option>
+									<option id="1999" value="1999">1999</option>
+									<option id="2000" value="2000">2000</option>
+									<option id="2001" value="2001">2001</option>
+									<option id="2002" value="2002">2002</option>
+									<option id="2003" value="2003">2003</option>
+									<option id="2004" value="2004">2004</option>
+									<option id="2005" value="2005">2005</option>
+									<option id="2006" value="2006">2006</option>
+									<option id="2007" value="2007">2007</option>
+									<option id="2008" value="2008">2008</option>
+									<option id="2009" value="2009">2009</option>
+									<option id="2010" value="2010">2010</option>
+									<option id="2011" value="2011">2011</option>
+									<option id="2012" value="2012">2012</option>
+									<option id="2013" value="2013">2013</option>
+									<option id="2014" value="2014">2014</option>
+									<option id="2015" value="2015">2015</option>
+									<option id="2016" value="2016">2016</option>
+									<option id="2017" value="2017">2017</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<label>CURP:</label>
+								<input type="text" id="curp"></input>
+							</td>
+							<td align="center"></td>
+						</tr>
+						<tr>
+							<td align="center">
+								<label>Correo:</label>
+								<input type="text" id="correo"></input>
+							</td>
+							<td align="center"></td>
+						</tr>
+				</table>
+		</fieldset>
+
+		<br>
+			
+		<fieldset>
+			<legend><h1>Lenguajes de programación</h1></legend>
+				<table border="0">
+						<tr>
+							<td align="left">
+								<input type="checkbox" name="c" id="c" value="c"></input>
+								<label>C</label>
+							</td>
+							<td align="left">
+								<input type="checkbox" id="python" value="python"></input>
+								<label>Python</label>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<input type="checkbox" id="c++" value="c++"></input>
+								<label>C++</label>
+							</td>
+							<td align="left">
+								<input type="checkbox" id="perl" value="perl"></input>
+								<label>Perl</label>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<input type="checkbox" id="java" value="java"></input>
+								<label>Java</label>
+							</td>
+							<td align="left">
+								<input type="checkbox" id="php" value="php"></input>
+								<label>PHP</label>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<input type="checkbox" id="ruby" value="ruby"></input>
+								<label>Ruby</label>
+							</td>
+							<td align="left">
+								<input type="checkbox" id="otros" value="otros"></input>
+								<label>Otros</label>
+							</td>
+						</tr>
+				</table>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<legend><h1>Pasatiempos</h1></legend>
+				<table border="0">
+						<tr>
+							<td align="left">
+								<input type="checkbox" id="leer" value="leer"></input>
+								<label>Leer</label>
+							</td>
+							<td align="left">
+								<input type="checkbox" id="internet" value="internet"></input>
+								<label>Navegar en Internet</label>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<input type="checkbox" id="musica" value="musica"></input>
+								<label>Escuchar Música</label>
+							</td>
+							<td align="left">
+								<input type="checkbox" id="redsocial" value="redsocial"></input>
+								<label>Redes Sociales</label>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<input type="checkbox" id="tv" value="tv"></input>
+								<label>Ver TV</label>
+							</td>
+							<td align="left">
+								<input type="checkbox" id="juegos" value="juegos"></input>
+								<label>Videojuegos</label>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<input type="checkbox" id="netflix" value="netflix"></input>
+								<label>Ver Netflix</label>
+							</td>
+							<td align="left">
+								<input type="checkbox" id="otros2" value="otros2"></input>
+								<label>Otros</label>
+							</td>
+						</tr>
+				</table>
+		</fieldset>
+		
+		<br>
+		
+		<button onclick="setCookie()">Guardar Cookie</button>
+		<button onclick="getCookie()">Mostrar Cookie</button>
+		<input type="reset" value="Borrar" ></input>
+		
+		<br>
+		
+	</form>
+</body>
+	
+</html>
