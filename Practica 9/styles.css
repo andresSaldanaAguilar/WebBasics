@@ -1,0 +1,88 @@
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.cabecera{
+	float: left;
+	font-size: 400%;
+	color:#fff;
+}
+header{
+	height: 100px;
+    padding:5%;
+    background-image: url("https://static.pexels.com/photos/168575/pexels-photo-168575.jpeg");
+}
+.button-header{
+	 font-size: 100%;
+	 color:#fff;
+	 padding: 2%;
+	 float:right;
+	 background: rgba(0,0,0,0);
+	 border: none;
+}
+.seccion2{
+	padding-left:10%;
+	padding-right: 6%;
+	background: #ccc; 	
+	height: 410px;
+}
+.part1{
+	width: 40%;
+	padding-top: 5%;
+	float: left;
+}
+.slider-button{
+	background: rgba(0,0,0,0);
+	border: none;
+	color:#869199;
+}
+img{
+	border-radius: 10px;
+}
+.seccion2cab{
+	color:#869199;
+	padding-top: 3%;
+	float: right;
+}
+.seccion2cab text{
+	font-size: 300%;
+}
+.seccion3{
+	padding-left:10%;
+	padding-right: 6%;
+	height: 480px;
+}
+.mid{
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+.mid button{
+	font-size: 150%;
+	margin-top: 4%;
+}
+.quarter{
+	width: 25%;
+	float: left;
+}
+.btn-info{
+	background:#E64E3E;
+	padding: 2%;
+	border: none;
+	color: #fff;
+}
+#mid2{
+	margin-left: 4%;
+}
+input{
+	font-size: 200%;
+	width: 80%;
+}
+#search{
+	background:#E64E3E;
+	color: #fff;
+	padding: 2%;
+}
+.tird{
+	width: 33%;
+	float: left;
+}
